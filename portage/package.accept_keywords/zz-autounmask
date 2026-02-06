@@ -1,0 +1,20 @@
+# package.accept_keywords# required by librewolf (argument)
+=www-client/librewolf-143.0_p1 ~amd64
+# required by www-client/librewolf-143.0_p1::librewolf
+# required by librewolf (argument)
+=dev-libs/nss-3.116 ~amd64
+# required by wiremix (argument)
+=media-sound/wiremix-0.7.0 ~amd64
+# required by @selected
+# required by @world (argument)
+=www-client/librewolf-146.0_p2 ~amd64
+# required by www-client/librewolf-146.0_p2::librewolf
+# required by @selected
+# required by @world (argument)
+=dev-libs/nspr-4.38.2 ~amd64
+# required by www-client/librewolf-146.0_p2::librewolf
+# required by @selected
+# required by @world (argument)
+=dev-libs/nss-3.119 ~amd64
+# required by gui-apps/wf-recorder (argument)
+=gui-apps/wf-recorder-0.6.0 ~amd64

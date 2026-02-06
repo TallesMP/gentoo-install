@@ -1,0 +1,4 @@
+net-print/cups
+x11-libs/libXcomposite
+x11-libs/libXdamage
+x11-libs/libXrandr
