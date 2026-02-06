@@ -3,7 +3,7 @@
 source /etc/profile
 export PS1="(chroot) $PS1"
 
-LOCAL_DIR="/gentoo_install"
+LOCAL_DIR="/gentoo-install"
 
 echo ">>> Syncing Portage..."
 emerge-webrsync
@@ -113,22 +113,22 @@ USER_HOME="/home/$username"
 mkdir -p "$USER_HOME/.config"
 mkdir -p "$USER_HOME/.local/share"
 
-# Assuming /gentoo_install is your root-level folder in chroot
-if [ -d "/gentoo_install" ]; then
+# Assuming /gentoo-install is your root-level folder in chroot
+if [ -d "/gentoo-install" ]; then
     echo ">>> Copying configuration folders..."
-    cp -rp /gentoo_install/dotfiles/* "$USER_HOME/.config/"
-    cp -rp /gentoo_install/user/fonts "$USER_HOME/.local/share/"
+    cp -rp /gentoo-install/dotfiles/* "$USER_HOME/.config/"
+    cp -rp /gentoo-install/user/fonts "$USER_HOME/.local/share/"
 
     echo ">>> Copying shell profiles and startup scripts..."
-    cp -p /gentoo_install/user/.startup.sh "$USER_HOME/"
-    cp -p /gentoo_install/user/.zprofile "$USER_HOME/"
-    cp -p /gentoo_install/user/.zshrc "$USER_HOME/"
+    cp -p /gentoo-install/user/.startup.sh "$USER_HOME/"
+    cp -p /gentoo-install/user/.zprofile "$USER_HOME/"
+    cp -p /gentoo-install/user/.zshrc "$USER_HOME/"
 
     chown -R "$username:$username" "$USER_HOME"
     
     echo ">>> Dotfiles and user environment configured."
 else
-    echo "!!! Warning: /gentoo_install not found. Skipping dotfiles copy."
+    echo "!!! Warning: /gentoo-install not found. Skipping dotfiles copy."
 fi
 
 # dwl
